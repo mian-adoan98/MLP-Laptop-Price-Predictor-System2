@@ -1,0 +1,38 @@
+# Small ML Project: Laptop Price Prediction
+
+## Machine Learning Workflow 
+
+1. Data Collection: Gather data on laptop specifications and their corresponding prices from various sources such as online retailers, manufacturer websites, and tech review sites.
+2. Data Preprocessing: Clean the collected data by handling missing values, removing duplicates, and standardizing formats. Convert categorical variables into numerical representations using techniques like one-hot encoding or label encoding.
+3. Exploratory Data Analysis (EDA): Analyze the dataset to understand the relationships between different features and the target variable (price). Visualize distributions, correlations, and trends using plots and charts.
+4. Feature Engineering: Create new features that may improve the model's performance, such as calculating the age of the laptop, extracting brand information, or combining specifications into composite features.
+5. Model Selection: Choose appropriate machine learning algorithms for regression tasks, such as Linear Regression, Decision Trees, Random Forests, Gradient Boosting, or Support Vector Machines. Consider using ensemble methods to improve performance.
+6. Model Training: Split the dataset into training and testing sets. Train the selected models on the training data and tune hyperparameters using techniques like cross-validation or grid search to optimize performance.
+7. Model Evaluation: Evaluate the trained models on the testing set using metrics such as Mean Absolute Error (MAE), Mean Squared Error (MSE), Root Mean Squared Error (RMSE), and R-squared. Compare the performance of different models to select the best one.
+8. Model Deployment: Once the best model is selected, deploy it to a production environment where users can input laptop specifications and receive price predictions. This can be done through a web application, API, or other user interfaces.
+
+
+## Project Requirements
+### Functional Requirements
+1. The system should allow users to input laptop specifications such as brand, model, processor type, RAM size, storage capacity, screen size, and other relevant features.
+2. The system should provide an estimated price for the laptop based on the input specifications.
+3. The system should allow users to view the predicted price along with a confidence interval or prediction range.
+4. The system should provide an option for users to compare the predicted price with actual market prices from various sources.
+
+## Laptop Specifications to consider for UI-design:
+- Brand
+- Model
+- Processor Type
+- RAM Size
+- Storage Capacity
+- Screen Size
+
+
+## Project objectives
+1. To develop a machine learning model that accurately predicts laptop prices based on their specifications.
+2. To create a user-friendly interface that allows users to input laptop specifications and receive price predictions.
+
+## Use cases
+1. A user wants to know the estimated price of a laptop they are considering purchasing. They input the specifications into the system and receive a predicted price along with a confidence interval.
+2. A user wants to compare the predicted price of a laptop with actual market prices. They input the specifications and receive both the predicted price and a list of current market prices for similar laptops.
+

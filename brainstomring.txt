@@ -1,0 +1,8 @@
+# Brainstorming
+
+
+# Feature Engineering
+new features: Clockspeed 
+
+Clockspeed: look for resources on the processor name and model that shows the average Clockspeed
+Price: Convert ruppees to US Dollars (looup for conversion from 1 ruppees to 1 US dollars)

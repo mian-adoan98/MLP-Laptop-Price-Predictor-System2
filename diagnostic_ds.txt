@@ -1,0 +1,11 @@
+
+# Diagnostic Dataset
+
+    Feature names | FeatureType | NumDistinctValues | Nullvalues | UniqueValues
+
+
+data 
+- processed 
+- feature_ds
+- diagnostics
+- raw

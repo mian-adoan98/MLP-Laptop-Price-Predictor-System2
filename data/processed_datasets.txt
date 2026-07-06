@@ -1,0 +1,22 @@
+
+## Folder 1: Processed
+
+Datasets:
+- laptop_price_ds_v2: no feature transformation
+- laptop_price_ds_v3: from v2, feature selection (excluded 3 features: ram_type, processor_grnt, etc. )
+- laptop_price_ds_v4: from v3, binary encoding 
+
+## Folder 2: Diagnostics
+
+## Folder 3: Feature_encoding_ds
+Datasets: 
+
+the datasets is based on one feature that is encoded using onehotencoding. The feature combines with its nominal values that 
+serves as main encoded features containing binary numbers. 
+features encoded per dataset are: 
+- Brand
+- OS
+- Processor_brand
+- Processor_name
+- Weight
+

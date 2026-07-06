@@ -1,0 +1,9 @@
+,FeatureNames,DataTypes,NullValues,NumDistinctValues,UniqueValues,CategoricalType,Cardinality
+0,Brand,object,0,8,['ASUS' 'Lenovo' 'acer' 'Avita' 'HP' 'DELL' 'MSI' 'APPLE'],Nominal,Low
+1,Processor_brand,object,0,3,['Intel' 'AMD' 'M1'],Nominal,Low
+2,Processor_name,object,0,11,"['Core i3' 'Core i5' 'Celeron Dual' 'Ryzen 5' 'Core i7' 'Core i9' 'M1'
+ 'Pentium Quad' 'Ryzen 3' 'Ryzen 7' 'Ryzen 9']",Nominal,Medium
+3,Os,object,0,3,['Windows' 'DOS' 'Mac'],Nominal,Low
+4,Weight,object,0,3,['Casual' 'ThinNlight' 'Gaming'],Nominal,Low
+5,Touchscreen,object,0,2,['No' 'Yes'],Binary,Low
+6,Msoffice,object,0,2,['No' 'Yes'],Binary,Low
