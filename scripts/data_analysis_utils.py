@@ -3,7 +3,7 @@
 import pandas as pd 
 import numpy as np 
 import matplotlib.pyplot as plt 
-
+import seaborn as sns 
 
 # Feature Analysis
 # Function 1: build a one feature dataset
@@ -35,6 +35,34 @@ def build_diagnositc_feature_ds(dataset: pd.DataFrame) -> pd.DataFrame:
 
     # Give brief summaries of number of numerical features & categorical features 
     return diagnostic_ds
+
+# Function 3: Correlation Analysis
+def correlation_analysis(dataset: pd.DataFrame, features: list = None):
+    # Select the type of correlation analysis
+    if features is None: 
+        # Create a correlated dataset
+        corr_ds = dataset.corr()
+
+        # Create a correlation map for the entire dataset 
+        plt.figure(figsize=(14,8))
+        sns.heatmap(corr_ds, annot=True)
+        plt.title(f"Correlation Map") 
+        return 
+
+    # If features are provided, validate them 
+    missing = [f for f in features if f not in dataset.columns]
+    if missing: 
+        raise ValueError(f"Features not found in dataset: {missing}")
+    
+    # Create a specific feature-based correlated dataset
+    corr_ds = dataset.corr()
+    spec_corr_ds = corr_ds[features]
+
+    # Create a correlated map for given input features
+    plt.figure(figsize=(14,8))
+    sns.heatmap(spec_corr_ds, annot=True)
+    plt.title(f"Correlation Map({features})") 
+    return 
 
 # Test Environment
 if __name__ == "__main__":

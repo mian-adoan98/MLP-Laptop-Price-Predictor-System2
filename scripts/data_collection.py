@@ -65,6 +65,8 @@ class DataLoader(DataCollector):
             if not os.path.exists(folder_path):
                 os.makedirs(folder_path, exist_ok=True)
 
+            # Save the folder name
+            dataset.to_csv(new_file_path)
             print(f"Dataset {filename} has been stored succesfully in path loc. {folder_path}")
         else: 
             # Initialise new file path by using the existed path of the selected folder
