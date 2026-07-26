@@ -1,7 +1,7 @@
 # Data Collection
 from abc import abstractmethod, ABC
 
-# Import libraries
+# Import libraries for data manipulation
 # Import libraries for data analysis & visualisation
 import numpy as np 
 import pandas as pd 
@@ -76,8 +76,6 @@ class DataLoader(DataCollector):
             # Save dataset into folder 
             dataset.to_csv(new_file_path)
             print(f"Dataset {filename} has been stored succesfully in path loc. {self.selected_folder}")
-    
-
 
 # Test Environment
 if __name__ == "__main__":
